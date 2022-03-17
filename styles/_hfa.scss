@@ -1,0 +1,94 @@
+@import '_variables.scss';
+
+.header {
+  &__nav-link:hover,
+  &__nav-link:focus,
+  &__nav-link:active {
+    color: $blue;
+  }
+
+  &__btn:hover,
+  &__btn:focus,
+  &__btn:active {
+    background-color: #10538f;
+  }
+}
+
+.hero {
+  &__search:hover,
+  &__search:focus,
+  &__search:active {
+    outline: 2px solid $blue;
+  }
+
+  &__search:focus::-webkit-input-placeholder{
+    opacity: 0;
+  }
+
+  &__btn:hover,
+  &__btn:focus,
+  &__btn:active {
+    background-color: #10538f;
+  }
+
+  &__search:hover + button,
+  &__search:focus + button,
+  &__search:active + button {
+    background-color: #10538f;
+  }
+}
+
+.actions {
+  &__btn:hover,
+  &__btn:focus,
+  &__btn:active {
+    background-color: #F2FAFA;
+  }
+}
+
+.works {
+  &__slide-link:hover,
+  &__slide-link:focus,
+  &__slide-link:active {
+    color: #10538f;
+  }
+
+  &__slide-next:hover,
+  &__slide-next:focus,
+  &__slide-next:active,
+  &__slide-prev:hover,
+  &__slide-prev:focus,
+  &__slide-prev:active {
+    background-color: $blue;
+  }
+
+  &__slide-next:hover svg path,
+  &__slide-next:focus svg path,
+  &__slide-next:active svg path,
+  &__slide-prev:hover svg path,
+  &__slide-prev:focus svg path,
+  &__slide-prev:active svg path {
+    fill: $white;
+  }
+}
+
+.footer {
+
+  &__cont:hover svg path,
+  &__cont:focus svg path,
+  &__cont:active svg path {
+    fill: $blue
+  }
+
+  &__link:hover,
+  &__link:focus,
+  &__link:active {
+    color: $blue;
+  }
+
+  &__link:hover svg path ,
+  &__link:focus svg path,
+  &__link:active svg path {
+    fill: $blue;
+  }
+}

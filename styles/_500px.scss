@@ -1,0 +1,138 @@
+@import '_variables.scss';
+
+@media (max-width: 600px) {
+  .hero {
+    background-size: 130px;
+    background-position: 90% 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .header {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .hero {
+    background-position: center 72px;
+    background-size: 130px;
+    &__wrap {
+      flex-direction: column-reverse;
+    }
+    &__title {
+      margin: 0 auto 103px;
+      font-size: 25px;
+      line-height: 38px;
+      text-align: center;
+    }
+    &__descr {
+      margin:0 auto 14px;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+    }
+    &__search {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    &__search-btn {
+      left: auto;
+      right: 0;
+    }
+    &__form {
+      width: 100%;
+      max-width: none;
+    }
+
+    &__btn {
+      width: 100%;
+      margin-right: 0;
+    }
+
+  }
+
+  .actions {
+    &__icon {
+      margin-bottom: 0;
+    }
+    &__title {
+      font-size: 15px;
+    }
+    &__descr {
+      font-size: 12px;
+    }
+  }
+
+  .works {
+    &__title {
+      font-size: 25px;
+      margin-bottom: 50px;
+    }
+    &__slide-next, &__slide-prev {
+      top: 112px;
+    }
+    &__slide-next {
+      right: calc(50% - 50px);
+    }
+    &__slide-prev {
+      left: calc(50% - 50px);
+    }
+  }
+
+  .advants {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+
+    &__img {
+      grid-column: 1 / 1;
+      grid-row: 2 / 2;
+      max-width: 100%;
+    }
+    &__title {
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+      justify-self: start;
+      max-width: 320px;
+      margin-left: 0;
+      text-align: left;
+    }
+    &__descr {
+      grid-column: 1 / 1;
+      grid-row: 3 / 3;
+    }
+    &__works, &__freelancers {
+      padding: 10px;
+      left: auto;
+    }
+    &__works {
+      top: 217px;
+      width: 112px;
+      right: 15px;
+    }
+    &__freelancers {
+      top: 145px;
+      right: 75px;
+    }
+    &__semi-title {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__semi-descr {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+
+  .footer {
+    &__li:not(:first-child) {
+      display: none;
+    }
+  }
+
+}
+
